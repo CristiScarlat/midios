@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Layout as AntLayout } from 'antd'
-import { Ctx } from '../context/context'
+import { Ctx } from '../../context/context'
 import styles from './layout.module.scss'
 
 type Props = {
@@ -42,7 +42,7 @@ const Layout: React.FC<Props> = ({ children }: Props) => {
                     </div>
                 </Header>
                 <Content style={{ padding: '1rem', overflow: 'auto' }}>{children}</Content>
-                <Footer style={{ textAlign: 'center', padding: '1rem' }}>Ant Design ©2018 Created by Ant UED</Footer>
+                <Footer style={{ textAlign: 'center', padding: '1rem', backgroundColor: '#e6e8eb' }}>Ant Design ©2018 Created by Ant UED</Footer>
             </AntLayout>
         </>
     )

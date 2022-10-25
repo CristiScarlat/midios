@@ -21,9 +21,7 @@ export const initMidi = () =>
   });
 
 export const listMidiPorts = () => {
-  const inputs = Array.from(midi.inputs);
-  const outputs = Array.from(midi.outputs);
-  return { inputs, outputs };
+  return { inputs: midi.inputs, outputs: midi.outputs };
 };
 
 export const setSelectedMidiPort = (portName: string, cb: () => void) => {
